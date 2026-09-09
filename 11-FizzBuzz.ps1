@@ -1,0 +1,21 @@
+[int]$maxNumber = Read-Host "Enter a number"
+
+for ($i = 1; $i -le $maxNumber; $i++)
+{
+    if ($i % 15 -eq 0)
+    {
+        "FizzBuzz"
+    }
+    elseif ($i % 3 -eq 0)
+    {
+        "Fizz"
+    }
+    elseif ($i % 5 -eq 0)
+    {
+        "Buzz"
+    }
+    else
+    {
+        $i
+    }
+}
